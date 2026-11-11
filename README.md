@@ -27,7 +27,7 @@ tiny-llm-fusion/
 The code runs on a small CPU box, and the control plane rents one GPU VM per model.
 
 ```bash
-uv sync                                            # add --extra train on the box that runs DPO
+uv sync
 export GPU_CLOUD_URL="https://your-gpu-cloud/v1"   # any VM API that can create, read and delete
 export GPU_CLOUD_KEY="your key"
 export GATEWAY_KEY="a long random string"          # every model call carries it

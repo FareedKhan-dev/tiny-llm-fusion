@@ -9,6 +9,7 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "anthropic",
+    "openai",
     "math-verify",
     "bm25s",
     "scikit-learn",
@@ -16,11 +17,10 @@ dependencies = [
     "numpy",
     "pandas",
     "datasets",
+    "trl",
+    "peft",
     "jupyterlab",
 ]
-
-[project.optional-dependencies]
-train = ["trl", "peft"]
 
 [tool.uv]
 package = false
