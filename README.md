@@ -18,7 +18,8 @@ tiny-llm-fusion/
 │   ├── serve_app/     # orchestrator
 │   └── eval/          # harness
 ├── data/              # benchmark files and the sealed manifest
-└── results/           # every number the post prints
+├── results/           # every number the post prints
+└── notebook.ipynb     # the post's driver cells, in order
 ```
 
 ## Setup
@@ -35,7 +36,13 @@ export ANTHROPIC_API_KEY="your key"                # only the frontier yardstick
 uv run jupyter lab
 ```
 
-The drivers are cells of one notebook, run in the order of the post: the data and the seal, the fleet, the pool, the Opus pilot, the tools, sampling and the vote, the aggregator, the verifier and calibration, the router, the orchestrator, DPO, and last the sealed evaluation.
+`notebook.ipynb` holds the post's driver cells in its order: the data and the seal, the fleet, the gateway, grading, the pool, the Opus pilot, the tools, sampling and the vote, the aggregator, the verifier and calibration, the router, the orchestrator, DPO, and last the sealed evaluation and the ablation.
+
+The code assumes three things:
+
+- **It runs from the repo root**, because `data/` and `results/` are relative paths.
+- **The CPU box runs Linux or macOS.** The sandbox caps each run with Python's `resource` module, which Windows does not have.
+- **The data cells run first.** `seal` writes `data/sealed_manifest_seed2026.json`, and the episode store refuses to open without it, so no sealed question can reach training.
 
 ## Results
 
