@@ -1,0 +1,10 @@
+{
+ "_about": "the dev day's fleet cost, attributed to tasks, in Budget Governor and Telemetry",
+ "calls_n": {"v": 43246, "provisional": true},
+ "tasks_n": {"v": 1805, "provisional": false},
+ "vm_hours": {"v": 41.9, "provisional": true},
+ "credits": {"v": 36.03, "provisional": true},
+ "costliest": {"v": 0.3141, "provisional": true},
+ "median": {"v": 0.0152, "provisional": true},
+ "costliest_x": {"v": 21, "provisional": true}
+}

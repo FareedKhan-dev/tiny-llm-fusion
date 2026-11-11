@@ -1,0 +1,217 @@
+{
+ "_about": "derived numbers for Evaluation Harness, Accuracy Against Spend and Claim Verdicts",
+ "reads_n": {
+  "v": 12933,
+  "provisional": true
+ },
+ "fleet_peak_vms": {
+  "v": 8,
+  "provisional": true
+ },
+ "breaker_trips_n": {
+  "v": 2,
+  "provisional": true
+ },
+ "gap_mean_dpo": {
+  "v": 0.863,
+  "provisional": true
+ },
+ "escape": {
+  "acc": {
+   "v": 91.09,
+   "provisional": true
+  },
+  "share_pct": {
+   "v": 4.1,
+   "provisional": true
+  },
+  "credits": {
+   "v": 0.00291,
+   "provisional": true
+  },
+  "ratio": {
+   "v": 11.6,
+   "provisional": true
+  }
+ },
+ "study": {
+  "vm_hours": {
+   "v": 186.0,
+   "provisional": true
+  },
+  "gpu_credits": {
+   "v": 160.0,
+   "provisional": true
+  },
+  "opus_credits": {
+   "v": 54.0,
+   "provisional": true
+  },
+  "total_credits": {
+   "v": 214.0,
+   "provisional": true
+  }
+ },
+ "gap_closed_dpo": {
+  "gsm8k": {
+   "v": 0.95,
+   "provisional": true
+  },
+  "math500": {
+   "v": 0.8153846153846154,
+   "provisional": true
+  },
+  "mmlu": {
+   "v": 0.7058823529411765,
+   "provisional": true
+  },
+  "humaneval_plus": {
+   "v": 1.0,
+   "provisional": true
+  },
+  "mbpp_plus": {
+   "v": 0.9771328056288474,
+   "provisional": true
+  },
+  "bbh": {
+   "v": 0.8507462686567164,
+   "provisional": true
+  }
+ },
+ "opus_refused": {
+  "v": 0,
+  "provisional": true
+ },
+ "paired_reads_n": {
+  "v": 8568,
+  "provisional": true
+ },
+ "design": {
+  "budget_credits": {
+   "1": {
+    "v": 0.002,
+    "provisional": false
+   },
+   "2": {
+    "v": 0.006,
+    "provisional": false
+   },
+   "3": {
+    "v": 0.02,
+    "provisional": false
+   }
+  },
+  "hard_multiple": {
+   "v": 2,
+   "provisional": false
+  },
+  "run_ceiling_credits": {
+   "v": 400.0,
+   "provisional": false
+  },
+  "slots": {
+   "v": 48,
+   "provisional": false
+  },
+  "reserved": {
+   "v": 12,
+   "provisional": false
+  },
+  "breaker_fails": {
+   "v": 3,
+   "provisional": false
+  },
+  "breaker_s": {
+   "v": 30,
+   "provisional": false
+  },
+  "tick_s": {
+   "v": 15,
+   "provisional": false
+  },
+  "up_cool_s": {
+   "v": 60,
+   "provisional": false
+  },
+  "down_cool_s": {
+   "v": 300,
+   "provisional": false
+  },
+  "quiet_s": {
+   "v": 600,
+   "provisional": false
+  },
+  "sandbox_mem_mb": {
+   "v": 512,
+   "provisional": false
+  },
+  "sandbox_timeout_s": {
+   "v": 5,
+   "provisional": false
+  },
+  "code_timeout_s": {
+   "v": 10,
+   "provisional": false
+  },
+  "tier_cost": {
+   "1": {
+    "v": 0.0004,
+    "provisional": false
+   },
+   "2": {
+    "v": 0.0021,
+    "provisional": false
+   },
+   "3": {
+    "v": 0.0045,
+    "provisional": false
+   }
+  },
+  "moa_k": {
+   "v": 6,
+   "provisional": false
+  },
+  "moa_tail_chars": {
+   "v": 1500,
+   "provisional": false
+  },
+  "retrieval_k": {
+   "v": 4,
+   "provisional": false
+  },
+  "pal_samples": {
+   "v": 2,
+   "provisional": false
+  },
+  "per_model": {
+   "v": 4,
+   "provisional": false
+  },
+  "tier2_per_model": {
+   "v": 2,
+   "provisional": false
+  },
+  "lora_rank": {
+   "v": 16,
+   "provisional": false
+  },
+  "interval_pct": {
+   "v": 95,
+   "provisional": false
+  }
+ },
+ "tost": {
+  "gap_abs_pts": {
+   "v": 1.378,
+   "provisional": true
+  },
+  "ci_level_pct": {
+   "v": 90,
+   "provisional": false
+  },
+  "margin_pts": {
+   "v": 2.0,
+   "provisional": false
+  }
+ }
+}

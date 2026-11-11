@@ -1,0 +1,35 @@
+{
+ "_about": "verifier and calibration on dev, in Verification and Calibration",
+ "code_vote": {
+  "v": 72.5,
+  "provisional": true
+ },
+ "code_verifier": {
+  "v": 81.0,
+  "provisional": true
+ },
+ "ece_raw": {
+  "v": 0.112,
+  "provisional": true
+ },
+ "ece_cal": {
+  "v": 0.021,
+  "provisional": true
+ },
+ "escape": {
+  "v": 0.5,
+  "provisional": false
+ },
+ "escape_pct": {
+  "v": 4.1,
+  "provisional": true
+ },
+ "escape_wrong_pct": {
+  "v": 62,
+  "provisional": true
+ },
+ "code_gain": {
+  "v": 8.5,
+  "provisional": true
+ }
+}

@@ -1,0 +1,26 @@
+[project]
+name = "tiny-llm-fusion"
+version = "0.1.0"
+description = "Four small open LLMs fused into one self-improving engine, measured against Claude Opus 5.5"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx",
+    "fastapi",
+    "uvicorn",
+    "anthropic",
+    "math-verify",
+    "bm25s",
+    "scikit-learn",
+    "scipy",
+    "numpy",
+    "pandas",
+    "datasets",
+    "jupyterlab",
+]
+
+[project.optional-dependencies]
+train = ["trl", "peft"]
+
+[tool.uv]
+package = false

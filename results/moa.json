@@ -1,0 +1,45 @@
+{
+ "_about": "Mixture-of-Agents and the critique round on dev, in Mixture-of-Agents Aggregation",
+ "vote": {
+  "v": 85.3,
+  "provisional": true
+ },
+ "with_moa": {
+  "v": 87.4,
+  "provisional": true
+ },
+ "agg_alone": {
+  "v": 87.5,
+  "provisional": true
+ },
+ "agg_weight": {
+  "v": 1.95,
+  "provisional": true
+ },
+ "critic": {
+  "margin_under": {
+   "v": 0.3,
+   "provisional": false
+  },
+  "close_n": {
+   "v": 212,
+   "provisional": true
+  },
+  "fixed": {
+   "v": 31,
+   "provisional": true
+  },
+  "broke": {
+   "v": 33,
+   "provisional": true
+  },
+  "extra_tokens_pct": {
+   "v": 34,
+   "provisional": true
+  }
+ },
+ "gain": {
+  "v": 2.1,
+  "provisional": true
+ }
+}

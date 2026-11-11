@@ -1,0 +1,282 @@
+{
+ "per_benchmark": {
+  "gsm8k": {
+   "best_single": {
+    "v": 92.0,
+    "provisional": true
+   },
+   "fused": {
+    "v": 96.5,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 96.75,
+    "provisional": true
+   },
+   "opus": {
+    "v": 97.0,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.9,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 0.95,
+    "provisional": true
+   }
+  },
+  "math500": {
+   "best_single": {
+    "v": 79.5,
+    "provisional": true
+   },
+   "fused": {
+    "v": 92.25,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 92.75,
+    "provisional": true
+   },
+   "opus": {
+    "v": 95.75,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.785,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 0.815,
+    "provisional": true
+   }
+  },
+  "mmlu": {
+   "best_single": {
+    "v": 74.25,
+    "provisional": true
+   },
+   "fused": {
+    "v": 85.75,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 86.25,
+    "provisional": true
+   },
+   "opus": {
+    "v": 91.25,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.676,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 0.706,
+    "provisional": true
+   },
+   "fused_no_retrieval": {
+    "v": 78.75,
+    "provisional": true
+   },
+   "gap_closed_no_retrieval": {
+    "v": 0.265,
+    "provisional": true
+   }
+  },
+  "humaneval_plus": {
+   "best_single": {
+    "v": 78.66,
+    "provisional": true
+   },
+   "fused": {
+    "v": 92.07,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 92.68,
+    "provisional": true
+   },
+   "opus": {
+    "v": 92.68,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.957,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 1.0,
+    "provisional": true
+   }
+  },
+  "mbpp_plus": {
+   "best_single": {
+    "v": 70.11,
+    "provisional": true
+   },
+   "fused": {
+    "v": 80.95,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 81.22,
+    "provisional": true
+   },
+   "opus": {
+    "v": 81.48,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.953,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 0.977,
+    "provisional": true
+   }
+  },
+  "bbh": {
+   "best_single": {
+    "v": 76.75,
+    "provisional": true
+   },
+   "fused": {
+    "v": 90.5,
+    "provisional": true
+   },
+   "fused_dpo": {
+    "v": 91.0,
+    "provisional": true
+   },
+   "opus": {
+    "v": 93.5,
+    "provisional": true
+   },
+   "gap_closed": {
+    "v": 0.821,
+    "provisional": true
+   },
+   "gap_closed_dpo": {
+    "v": 0.851,
+    "provisional": true
+   }
+  }
+ },
+ "means": {
+  "best_single": {
+   "v": 78.54,
+   "provisional": true
+  },
+  "fused": {
+   "v": 89.67,
+   "provisional": true
+  },
+  "fused_dpo": {
+   "v": 90.11,
+   "provisional": true
+  },
+  "opus": {
+   "v": 91.94,
+   "provisional": true
+  },
+  "gap_points_fused": {
+   "v": 2.27,
+   "provisional": true
+  },
+  "gap_points_dpo": {
+   "v": 1.83,
+   "provisional": true
+  }
+ },
+ "gap": {
+  "pooled_checkable": {
+   "v": 0.858,
+   "provisional": true
+  },
+  "pooled_checkable_dpo": {
+   "v": 0.89,
+   "provisional": true
+  },
+  "pooled_all": {
+   "v": 0.815,
+   "provisional": true
+  }
+ },
+ "cost": {
+  "opus_per_task": {
+   "v": 0.033888,
+   "provisional": true
+  },
+  "fused_busy_per_task": {
+   "v": 0.001223,
+   "provisional": true
+  },
+  "fused_loaded_per_task": {
+   "v": 0.001899,
+   "provisional": true
+  },
+  "fused_dpo_loaded_per_task": {
+   "v": 0.001558,
+   "provisional": true
+  },
+  "escape_per_task": {
+   "v": 0.002913,
+   "provisional": true
+  },
+  "ratio_fused_loaded": {
+   "v": 17.8,
+   "provisional": true
+  },
+  "ratio_dpo_loaded": {
+   "v": 21.8,
+   "provisional": true
+  },
+  "ratio_escape": {
+   "v": 11.6,
+   "provisional": true
+  },
+  "dpo_cost_drop": {
+   "v": 0.18,
+   "provisional": true
+  }
+ },
+ "latency": {
+  "fused_p50_s": {
+   "v": 3.9,
+   "provisional": true
+  },
+  "fused_p95_s": {
+   "v": 21.4,
+   "provisional": true
+  },
+  "opus_p50_s": {
+   "v": 8.7,
+   "provisional": true
+  },
+  "opus_p95_s": {
+   "v": 24.0,
+   "provisional": true
+  },
+  "opus_live_sample": {
+   "v": 120,
+   "provisional": true
+  }
+ },
+ "counts": {
+  "sealed_total": {
+   "v": 4311,
+   "provisional": false
+  },
+  "paired_total": {
+   "v": 2142,
+   "provisional": false
+  },
+  "benchmarks": {
+   "v": 6,
+   "provisional": false
+  }
+ }
+}

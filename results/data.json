@@ -1,0 +1,864 @@
+{
+ "_about": "benchmark sources, the sealed slices, the paired subset, dev and train pools and dedupe (section 02, fig-seal)",
+ "sources": {
+  "_about": "every dataset the run downloads, rows per split and parquet size, printed in section 02 (sources table)",
+  "gsm8k": {
+   "_about": "GSM8K, grade-school math",
+   "repo": {
+    "v": "openai/gsm8k",
+    "provisional": false
+   },
+   "config": {
+    "v": "main",
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 1319,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.42,
+     "provisional": true
+    }
+   },
+   "train": {
+    "rows_n": {
+     "v": 7473,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 2.31,
+     "provisional": true
+    }
+   }
+  },
+  "math500": {
+   "_about": "MATH-500, the 500-problem subset of MATH test",
+   "repo": {
+    "v": "HuggingFaceH4/MATH-500",
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 500,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.41,
+     "provisional": true
+    }
+   }
+  },
+  "math": {
+   "_about": "MATH (competition math), the source of the math500 dev pool and math train pool",
+   "repo": {
+    "v": "EleutherAI/hendrycks_math",
+    "provisional": false
+   },
+   "configs_n": {
+    "v": 7,
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 5000,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 3.04,
+     "provisional": true
+    }
+   },
+   "train": {
+    "rows_n": {
+     "v": 7500,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 4.61,
+     "provisional": true
+    }
+   }
+  },
+  "mmlu": {
+   "_about": "MMLU, 57 subjects",
+   "repo": {
+    "v": "cais/mmlu",
+    "provisional": false
+   },
+   "config": {
+    "v": "all",
+    "provisional": false
+   },
+   "subjects_n": {
+    "v": 57,
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 14042,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 3.5,
+     "provisional": true
+    }
+   },
+   "validation": {
+    "rows_n": {
+     "v": 1531,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.41,
+     "provisional": true
+    }
+   },
+   "dev": {
+    "rows_n": {
+     "v": 285,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.08,
+     "provisional": true
+    }
+   },
+   "auxiliary_train": {
+    "rows_n": {
+     "v": 99842,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 47.51,
+     "provisional": true
+    }
+   }
+  },
+  "humaneval_plus": {
+   "_about": "HumanEval+ (EvalPlus), 164 problems with extended tests",
+   "repo": {
+    "v": "evalplus/humanevalplus",
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 164,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 6.12,
+     "provisional": true
+    }
+   }
+  },
+  "mbpp_plus": {
+   "_about": "MBPP+ (EvalPlus v0.2.0), 378 problems with extended tests",
+   "repo": {
+    "v": "evalplus/mbppplus",
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 378,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 7.84,
+     "provisional": true
+    }
+   }
+  },
+  "mbpp": {
+   "_about": "original MBPP (full config), the source of the code dev and train pools",
+   "repo": {
+    "v": "google-research-datasets/mbpp",
+    "provisional": false
+   },
+   "config": {
+    "v": "full",
+    "provisional": false
+   },
+   "train": {
+    "rows_n": {
+     "v": 374,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.18,
+     "provisional": true
+    }
+   },
+   "test": {
+    "rows_n": {
+     "v": 500,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.24,
+     "provisional": true
+    }
+   },
+   "validation": {
+    "rows_n": {
+     "v": 90,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.04,
+     "provisional": true
+    }
+   },
+   "prompt": {
+    "rows_n": {
+     "v": 10,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 0.01,
+     "provisional": true
+    }
+   },
+   "total_rows_n": {
+    "v": 974,
+    "provisional": false
+   }
+  },
+  "bbh": {
+   "_about": "BIG-Bench Hard, 27 tasks in one test split",
+   "repo": {
+    "v": "lukaemon/bbh",
+    "provisional": false
+   },
+   "tasks_n": {
+    "v": 27,
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 6511,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 1.13,
+     "provisional": true
+    }
+   },
+   "tasks_250_rows_n": {
+    "v": 24,
+    "provisional": false
+   },
+   "small_tasks_rows": {
+    "_about": "the three tasks with fewer than 250 rows",
+    "causal_judgement_n": {
+     "v": 187,
+     "provisional": false
+    },
+    "penguins_in_a_table_n": {
+     "v": 146,
+     "provisional": false
+    },
+    "snarks_n": {
+     "v": 178,
+     "provisional": false
+    }
+   }
+  },
+  "gsm_symbolic": {
+   "_about": "GSM-Symbolic main (100 templates x 50 instances), the perturbation probe in section 26",
+   "repo": {
+    "v": "apple/GSM-Symbolic",
+    "provisional": false
+   },
+   "config": {
+    "v": "main",
+    "provisional": false
+   },
+   "templates_n": {
+    "v": 100,
+    "provisional": false
+   },
+   "instances_per_template_n": {
+    "v": 50,
+    "provisional": false
+   },
+   "test": {
+    "rows_n": {
+     "v": 5000,
+     "provisional": false
+    },
+    "parquet_mb": {
+     "v": 2.27,
+     "provisional": true
+    }
+   }
+  }
+ },
+ "samples": {
+  "_about": "one real item per benchmark, printed under the sources table in section 02 (text to confirm at fetch)",
+  "gsm8k": {
+   "id": {
+    "v": "test[0]",
+    "provisional": true
+   },
+   "head": {
+    "v": "Janet's ducks lay 16 eggs per day.",
+    "provisional": true
+   },
+   "gold": {
+    "v": "18",
+    "provisional": true
+   }
+  },
+  "math500": {
+   "id": {
+    "v": "test/precalculus/807.json",
+    "provisional": true
+   },
+   "head": {
+    "v": "Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.",
+    "provisional": true
+   },
+   "gold": {
+    "v": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "provisional": true
+   }
+  },
+  "mmlu": {
+   "id": {
+    "v": "abstract_algebra test[0]",
+    "provisional": true
+   },
+   "head": {
+    "v": "Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.",
+    "provisional": true
+   },
+   "gold": {
+    "v": "B",
+    "provisional": true
+   }
+  },
+  "humaneval_plus": {
+   "id": {
+    "v": "HumanEval/0",
+    "provisional": true
+   },
+   "head": {
+    "v": "def has_close_elements(numbers: List[float], threshold: float) -> bool:",
+    "provisional": true
+   },
+   "gold": {
+    "v": "base 3 tests, plus tests",
+    "provisional": true
+   }
+  },
+  "mbpp_plus": {
+   "id": {
+    "v": "Mbpp/2",
+    "provisional": true
+   },
+   "head": {
+    "v": "Write a function to find the shared elements from the given two lists.",
+    "provisional": true
+   },
+   "gold": {
+    "v": "assert set(similar_elements((3, 4, 5, 6),(5, 7, 4, 10))) == set((4, 5))",
+    "provisional": true
+   }
+  },
+  "bbh": {
+   "id": {
+    "v": "boolean_expressions[0]",
+    "provisional": true
+   },
+   "head": {
+    "v": "not ( ( not not True ) ) is",
+    "provisional": true
+   },
+   "gold": {
+    "v": "False",
+    "provisional": true
+   }
+  }
+ },
+ "sealed": {
+  "_about": "the sealed test slices, fixed on day 1 before any build, printed in section 02 (seal output) and fig-seal",
+  "seed": {
+   "v": 2026,
+   "provisional": false
+  },
+  "total_n": {
+   "v": 4311,
+   "provisional": true
+  },
+  "per_bench": {
+   "gsm8k": {
+    "sealed_n": {
+     "v": 1319,
+     "provisional": true
+    },
+    "rule": {
+     "v": "the full test split",
+     "provisional": true
+    }
+   },
+   "math500": {
+    "sealed_n": {
+     "v": 500,
+     "provisional": true
+    },
+    "rule": {
+     "v": "all 500 problems",
+     "provisional": true
+    }
+   },
+   "mmlu": {
+    "sealed_n": {
+     "v": 1140,
+     "provisional": true
+    },
+    "rule": {
+     "v": "20 per subject x 57 subjects from test",
+     "provisional": true
+    }
+   },
+   "humaneval_plus": {
+    "sealed_n": {
+     "v": 164,
+     "provisional": true
+    },
+    "rule": {
+     "v": "all 164 problems",
+     "provisional": true
+    }
+   },
+   "mbpp_plus": {
+    "sealed_n": {
+     "v": 378,
+     "provisional": true
+    },
+    "rule": {
+     "v": "all 378 problems",
+     "provisional": true
+    }
+   },
+   "bbh": {
+    "sealed_n": {
+     "v": 810,
+     "provisional": true
+    },
+    "rule": {
+     "v": "30 per task x 27 tasks",
+     "provisional": true
+    }
+   }
+  },
+  "manifest": {
+   "file": {
+    "v": "data/sealed_manifest_seed2026.json",
+    "provisional": true
+   },
+   "sha256": {
+    "v": "88286cebe1d1eadd5b2f317b20c3d6f7f36917f21e0661b083416dc4b6b9b564",
+    "provisional": true
+   },
+   "sha256_prefix": {
+    "v": "88286cebe1d1",
+    "provisional": true
+   },
+   "created_at": {
+    "v": "2026-11-12T08:41:09Z",
+    "provisional": true
+   },
+   "ids_n": {
+    "v": 4311,
+    "provisional": true
+   }
+  },
+  "access_log": {
+   "_about": "every read of a sealed slice is one log row, arm x benchmark, all on day 3",
+   "paired_only_runs_n": {
+    "v": 17,
+    "provisional": true
+   },
+   "sealed_full_runs_n": {
+    "v": 3,
+    "provisional": true
+   },
+   "ablation_runs_n": {
+    "v": 10,
+    "provisional": true
+   },
+   "benchmarks_n": {
+    "v": 6,
+    "provisional": true
+   },
+   "entries_n": {
+    "v": 180,
+    "provisional": true
+   },
+   "reads_before_day3_n": {
+    "v": 0,
+    "provisional": true
+   },
+   "seal_guard_refusals_n": {
+    "v": 0,
+    "provisional": true
+   },
+   "first_read_at": {
+    "v": "2026-11-14T06:12:40Z",
+    "provisional": true
+   },
+   "last_read_at": {
+    "v": "2026-11-14T18:57:22Z",
+    "provisional": true
+   }
+  }
+ },
+ "paired": {
+  "_about": "the paired subset every arm and the frontier share, printed in section 25 and used by every eval table",
+  "total_n": {
+   "v": 2142,
+   "provisional": true
+  },
+  "per_bench": {
+   "gsm8k": {
+    "paired_n": {
+     "v": 400,
+     "provisional": true
+    },
+    "rule": {
+     "v": "400 drawn at random from the sealed slice",
+     "provisional": true
+    }
+   },
+   "math500": {
+    "paired_n": {
+     "v": 400,
+     "provisional": true
+    },
+    "rule": {
+     "v": "400 drawn at random from the sealed slice",
+     "provisional": true
+    }
+   },
+   "mmlu": {
+    "paired_n": {
+     "v": 400,
+     "provisional": true
+    },
+    "rule": {
+     "v": "7 per subject plus 1 at random (399 + 1)",
+     "provisional": true
+    }
+   },
+   "humaneval_plus": {
+    "paired_n": {
+     "v": 164,
+     "provisional": true
+    },
+    "rule": {
+     "v": "the whole sealed slice",
+     "provisional": true
+    }
+   },
+   "mbpp_plus": {
+    "paired_n": {
+     "v": 378,
+     "provisional": true
+    },
+    "rule": {
+     "v": "the whole sealed slice",
+     "provisional": true
+    }
+   },
+   "bbh": {
+    "paired_n": {
+     "v": 400,
+     "provisional": true
+    },
+    "rule": {
+     "v": "15 per task on 22 tasks and 14 on 5 (330 + 70)",
+     "provisional": true
+    }
+   }
+  },
+  "bbh_tasks_15_n": {
+   "v": 22,
+   "provisional": true
+  },
+  "bbh_tasks_14_n": {
+   "v": 5,
+   "provisional": true
+  },
+  "mmlu_per_subject_n": {
+   "v": 7,
+   "provisional": true
+  },
+  "mmlu_extra_n": {
+   "v": 1,
+   "provisional": true
+  }
+ },
+ "dedupe": {
+  "_about": "rows dropped before the dev and train pools are drawn, printed in section 02 (seal output)",
+  "mmlu_text": {
+   "_about": "MMLU rows whose normalised question text also appears in MMLU test",
+   "validation_dropped_n": {
+    "v": 9,
+    "provisional": true
+   },
+   "auxiliary_train_dropped_n": {
+    "v": 28,
+    "provisional": true
+   },
+   "dropped_n": {
+    "v": 37,
+    "provisional": true
+   }
+  },
+  "mbpp_task_id": {
+   "_about": "MBPP train rows whose task_id is also an MBPP+ problem",
+   "dropped_n": {
+    "v": 12,
+    "provisional": true
+   },
+   "first_id": {
+    "v": 752,
+    "provisional": true
+   },
+   "last_id": {
+    "v": 763,
+    "provisional": true
+   },
+   "ids": {
+    "v": [
+     752,
+     753,
+     754,
+     755,
+     756,
+     757,
+     758,
+     759,
+     760,
+     761,
+     762,
+     763
+    ],
+    "provisional": true
+   }
+  },
+  "math_overlap": {
+   "_about": "MATH test problems that are MATH-500 problems, removed before the math500 dev draw",
+   "dropped_n": {
+    "v": 500,
+    "provisional": false
+   }
+  },
+  "total_dropped_n": {
+   "v": 49,
+   "provisional": true
+  },
+  "repeated_questions_n": {
+   "v": 537,
+   "provisional": true
+  }
+ },
+ "dev": {
+  "_about": "dev pools for tuning the router, the voters and the calibrator, printed in section 02",
+  "seed": {
+   "v": 2026,
+   "provisional": false
+  },
+  "gsm8k": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 7473,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 400,
+    "provisional": true
+   }
+  },
+  "math500": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 4500,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 400,
+    "provisional": true
+   }
+  },
+  "mmlu": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 1522,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 400,
+    "provisional": true
+   }
+  },
+  "code": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 362,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 200,
+    "provisional": true
+   }
+  },
+  "bbh": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 5701,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 405,
+    "provisional": true
+   },
+   "per_task_n": {
+    "v": 15,
+    "provisional": true
+   }
+  },
+  "total_n": {
+   "v": 1805,
+   "provisional": true
+  }
+ },
+ "train": {
+  "_about": "the training-pass pool the engine solves on day 2 to fill the episode store, printed in section 02 and 22",
+  "seed": {
+   "v": 2026,
+   "provisional": false
+  },
+  "gsm8k": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 7073,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 3000,
+    "provisional": true
+   }
+  },
+  "math": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 7500,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 2400,
+    "provisional": true
+   }
+  },
+  "mmlu": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 99814,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 1800,
+    "provisional": true
+   }
+  },
+  "code": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 162,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 162,
+    "provisional": true
+   }
+  },
+  "bbh": {
+   "source": {
+    "v": "the pool, a random draw without overlap (data.draw)",
+    "provisional": false
+   },
+   "eligible_n": {
+    "v": 5296,
+    "provisional": true
+   },
+   "drawn_n": {
+    "v": 1620,
+    "provisional": true
+   },
+   "per_task_n": {
+    "v": 60,
+    "provisional": true
+   }
+  },
+  "total_n": {
+   "v": 8982,
+   "provisional": true
+  }
+ },
+ "pool": {
+  "_about": "rows left after sealing and dedupe, printed by the seal driver in Sealed Benchmark Splits",
+  "total_n": {
+   "v": 126872,
+   "provisional": true
+  },
+  "sources": {
+   "v": "gsm8k_train, math_full, math_train, mmlu_val, mmlu_aux, mbpp_train, bbh outside the seal",
+   "provisional": false
+  }
+ },
+ "download": {
+  "rows_n": {
+   "v": 144634,
+   "provisional": true
+  },
+  "sources_n": {
+   "v": 12,
+   "provisional": false
+  },
+  "disk_mb": {
+   "v": 231,
+   "provisional": true
+  }
+ }
+}

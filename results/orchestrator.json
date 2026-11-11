@@ -1,0 +1,21 @@
+{
+ "_about": "the engine served as fusion-4x3b, in System Orchestrator",
+ "demo": {
+  "answer": {
+   "v": "\\frac{14}{3}",
+   "provisional": true
+  },
+  "tier": {
+   "v": 3,
+   "provisional": true
+  },
+  "governor": {
+   "v": "ok",
+   "provisional": true
+  },
+  "confidence": {
+   "v": 0.912,
+   "provisional": true
+  }
+ }
+}

@@ -1,0 +1,3116 @@
+{
+ "_about": "ablation study, one part removed at a time from fused_dpo on the paired subset, 95% paired CIs (section 27, plot-ablation)",
+ "full": {
+  "_about": "the reference system, equal to eval arms.fused_dpo",
+  "macro_acc_pct": {
+   "v": 90.11,
+   "provisional": true
+  },
+  "gpu_loaded_s": {
+   "v": 6.52,
+   "provisional": true
+  },
+  "loaded_credits": {
+   "v": 0.001558,
+   "provisional": true
+  }
+ },
+ "rows": {
+  "_about": "the 11 ablation rows in the order section 27 prints them",
+  "router": {
+   "_about": "remove router: every task gets the top tier, accuracy holds while spend rises about 2.4 times",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 370,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 344,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 363,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.1,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.6,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.433,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.35,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.85,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.559,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.13,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.16,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.89,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.523,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.55,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.05,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.661,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.21,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -0.74,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.32,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.268,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.9,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 15.65,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 9.13,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.003739,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 0.002181,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 2.4,
+    "provisional": true
+   },
+   "note": {
+    "v": "every task gets the top tier, accuracy holds while spend rises about 2.4 times",
+    "provisional": true
+   }
+  },
+  "diversity": {
+   "_about": "remove diversity: sixteen qwen samples replace the four-lab pool (Self-MoA), the loss sits on code and BBH",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 370,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 344,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 145,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 10,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -4.27,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 298,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 13,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -2.38,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 352,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 16,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -3.0,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.35,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.85,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.559,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.72,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.22,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.75,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -3.32,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -5.7,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": -0.94,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 1.214,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -3.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -5.17,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": -0.83,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 1.108,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -1.73,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -2.71,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": -0.76,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.498,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 88.38,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.71,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 0.19,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001603,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 4.5e-05,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.029,
+    "provisional": true
+   },
+   "note": {
+    "v": "sixteen qwen samples replace the four-lab pool (Self-MoA), the loss sits on code and BBH",
+    "provisional": true
+   }
+  },
+  "pot": {
+   "_about": "remove pot: chain of thought only, arithmetic slips come back on GSM8K and MATH-500",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 12,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -2.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 362,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 13,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -2.25,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 361,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.75,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -2.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -3.63,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": -0.87,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.703,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.69,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.69,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.354,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.37,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.37,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.187,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.75,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.04,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.54,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.66,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.88,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -1.41,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": -0.34,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.273,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.23,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 7.02,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 0.5,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001677,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 0.000119,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.077,
+    "provisional": true
+   },
+   "note": {
+    "v": "chain of thought only, arithmetic slips come back on GSM8K and MATH-500",
+    "provisional": true
+   }
+  },
+  "retrieval": {
+   "_about": "remove retrieval: no passages, MMLU falls about 7 points and prompts get shorter",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 317,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 34,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -7.0,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 363,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.35,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.35,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.177,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -7.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -10.02,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": -3.98,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 1.542,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.1,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.6,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.433,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -1.21,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -1.74,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": -0.67,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.273,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 88.9,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.21,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": -0.31,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001484,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": -7.4e-05,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 0.952,
+    "provisional": true
+   },
+   "note": {
+    "v": "no passages, MMLU falls about 7 points and prompts get shorter",
+    "provisional": true
+   }
+  },
+  "moa": {
+   "_about": "remove moa: the vote runs on raw proposals with no aggregator, a small loss mostly on MMLU and BBH",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 369,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 340,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 10,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -1.25,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 359,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 9,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -1.25,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.38,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.32,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.57,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.484,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -1.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -3.14,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.64,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.966,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.13,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.16,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.89,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.523,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -1.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -3.01,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.51,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.899,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.59,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -1.22,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.05,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.324,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.52,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 5.9,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": -0.62,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001409,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": -0.000148,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 0.905,
+    "provisional": true
+   },
+   "note": {
+    "v": "the vote runs on raw proposals with no aggregator, a small loss mostly on MMLU and BBH",
+    "provisional": true
+   }
+  },
+  "vote_weights": {
+   "_about": "remove vote_weights: every member votes with weight 1, a small loss",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 370,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 343,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 151,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.61,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 362,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.1,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.6,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.433,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.89,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.89,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.707,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.44,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.62,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.75,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.605,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.89,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.89,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.707,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.4,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -0.98,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.19,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.299,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.71,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.55,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 0.03,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001565,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 7e-06,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.005,
+    "provisional": true
+   },
+   "note": {
+    "v": "every member votes with weight 1, a small loss",
+    "provisional": true
+   }
+  },
+  "critique": {
+   "_about": "remove critique: no critique round, the flips in both directions nearly cancel",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 369,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 344,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 362,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.38,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.5,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.75,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.573,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.72,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.22,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.75,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.13,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.56,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.29,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.727,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.2,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.2,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.866,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.29,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -1.01,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.42,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.363,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.81,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.24,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": -0.28,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001491,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": -6.7e-05,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 0.957,
+    "provisional": true
+   },
+   "note": {
+    "v": "no critique round, the flips in both directions nearly cancel",
+    "provisional": true
+   }
+  },
+  "verifier_tests": {
+   "_about": "remove verifier_tests: the reward model picks code without execution tests, code drops hard",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 141,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 13,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -6.71,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 291,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 19,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -4.23,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -5.47,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -8.02,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": -2.92,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 1.303,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.0,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -1.82,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -2.67,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": -0.97,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.434,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 88.28,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.88,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 0.36,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001644,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 8.6e-05,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.055,
+    "provisional": true
+   },
+   "note": {
+    "v": "the reward model picks code without execution tests, code drops hard",
+    "provisional": true
+   }
+  },
+  "calibration": {
+   "_about": "remove calibration: raw vote shares as confidence, more tasks climb to higher tiers, cost rises and accuracy holds",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 344,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 2,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 0,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 1,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.49,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.49,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.25,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.1,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.6,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.433,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.37,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.37,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.187,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -0.69,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.69,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.354,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.04,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -0.32,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.23,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.14,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 90.07,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 8.54,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 2.02,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.00204,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 0.000483,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.31,
+    "provisional": true
+   },
+   "note": {
+    "v": "raw vote shares as confidence, more tasks climb to higher tiers, cost rises and accuracy holds",
+    "provisional": true
+   }
+  },
+  "dpo": {
+   "_about": "remove dpo: base members instead of the DPO adapters, this row is the fused arm",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 386,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 369,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 9,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 343,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 8,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 151,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 4,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.61,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 362,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 9,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.38,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.65,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 0.9,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.649,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.33,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.33,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.935,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.44,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.27,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.4,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.937,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.5,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.46,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.46,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 1.0,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.44,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -1.31,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.43,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.443,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.67,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 7.95,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 1.43,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001899,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 0.000342,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.219,
+    "provisional": true
+   },
+   "note": {
+    "v": "base members instead of the DPO adapters, this row is the fused arm",
+    "provisional": true
+   }
+  },
+  "rlaif_variant": {
+   "_about": "remove rlaif_variant: DPO pairs labelled by the reward model instead of graders, about 70% of the DPO gain",
+   "per_bench": {
+    "gsm8k": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 387,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "math500": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 371,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 370,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    },
+    "mmlu": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 345,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "humaneval_plus": {
+     "tasks_n": {
+      "v": 164,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 152,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 3,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     }
+    },
+    "mbpp_plus": {
+     "tasks_n": {
+      "v": 378,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 307,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 306,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 5,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.26,
+      "provisional": true
+     }
+    },
+    "bbh": {
+     "tasks_n": {
+      "v": 400,
+      "provisional": true
+     },
+     "full_correct_n": {
+      "v": 364,
+      "provisional": true
+     },
+     "ablated_correct_n": {
+      "v": 363,
+      "provisional": true
+     },
+     "turned_wrong_n": {
+      "v": 7,
+      "provisional": true
+     },
+     "turned_right_n": {
+      "v": 6,
+      "provisional": true
+     },
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     }
+    }
+   },
+   "per_family": {
+    "math": {
+     "delta_acc_pct": {
+      "v": -0.12,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.3,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.05,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.599,
+      "provisional": true
+     }
+    },
+    "knowledge": {
+     "delta_acc_pct": {
+      "v": 0.0,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.7,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.7,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.866,
+      "provisional": true
+     }
+    },
+    "code": {
+     "delta_acc_pct": {
+      "v": -0.13,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -1.83,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.57,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.866,
+      "provisional": true
+     }
+    },
+    "reasoning": {
+     "delta_acc_pct": {
+      "v": -0.25,
+      "provisional": true
+     },
+     "ci_low_pct": {
+      "v": -2.02,
+      "provisional": true
+     },
+     "ci_high_pct": {
+      "v": 1.52,
+      "provisional": true
+     },
+     "se_pts": {
+      "v": 0.901,
+      "provisional": true
+     }
+    }
+   },
+   "delta_acc_pct": {
+    "v": -0.13,
+    "provisional": true
+   },
+   "ci_low_pct": {
+    "v": -0.93,
+    "provisional": true
+   },
+   "ci_high_pct": {
+    "v": 0.67,
+    "provisional": true
+   },
+   "se_pts": {
+    "v": 0.408,
+    "provisional": true
+   },
+   "ablated_macro_acc_pct": {
+    "v": 89.98,
+    "provisional": true
+   },
+   "gpu_loaded_s": {
+    "v": 6.81,
+    "provisional": true
+   },
+   "delta_gpu_loaded_s": {
+    "v": 0.29,
+    "provisional": true
+   },
+   "loaded_credits": {
+    "v": 0.001627,
+    "provisional": true
+   },
+   "delta_cost_credits": {
+    "v": 6.9e-05,
+    "provisional": true
+   },
+   "cost_ratio": {
+    "v": 1.044,
+    "provisional": true
+   },
+   "note": {
+    "v": "DPO pairs labelled by the reward model instead of graders, about 70% of the DPO gain",
+    "provisional": true
+   }
+  }
+ },
+ "rlaif_share": {
+  "_about": "the RLAIF variant's gain over base members as a share of the DPO gain (section 27)",
+  "dpo_gain_pts": {
+   "v": 0.437,
+   "provisional": true
+  },
+  "rlaif_gain_pts": {
+   "v": 0.31,
+   "provisional": true
+  },
+  "share_pct": {
+   "v": 70.9,
+   "provisional": true
+  }
+ },
+ "router_summary": {
+  "_about": "what the router buys, read off the router row (sections 12 and 27, claim H5)",
+  "cost_cut_pct": {
+   "v": 58.3,
+   "provisional": true
+  },
+  "acc_kept_pct": {
+   "v": 100.2,
+   "provisional": true
+  }
+ }
+}

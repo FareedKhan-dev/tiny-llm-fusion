@@ -1,0 +1,45 @@
+{
+ "_about": "inference gateway, printed in Inference Gateway (burst test)",
+ "slots": {
+  "v": 48,
+  "provisional": false
+ },
+ "reserved": {
+  "v": 12,
+  "provisional": false
+ },
+ "burst": {
+  "single": {
+   "easy_p95_s": {
+    "v": 41.37,
+    "provisional": true
+   },
+   "fanout_done_s": {
+    "v": 83.9,
+    "provisional": true
+   }
+  },
+  "fanout": {
+   "easy_p95_s": {
+    "v": 0.58,
+    "provisional": true
+   },
+   "fanout_done_s": {
+    "v": 102.7,
+    "provisional": true
+   }
+  }
+ },
+ "burst_hard_calls": {
+  "v": 96,
+  "provisional": false
+ },
+ "burst_easy_calls": {
+  "v": 40,
+  "provisional": false
+ },
+ "burst_fanout_cost_pct": {
+  "v": 22,
+  "provisional": true
+ }
+}

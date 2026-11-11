@@ -1,0 +1,169 @@
+{
+ "_about": "GPU control plane, printed in GPU Control Plane (provision log) and Evaluation Harness (autoscale, teardown)",
+ "vms": {
+  "qwen": {
+   "id": {
+    "v": "vm-7c41e2",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 51.2,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 143.7,
+    "provisional": true
+   },
+   "serving_s": {
+    "v": 418.3,
+    "provisional": true
+   },
+   "ip": {
+    "v": "10.0.3.17",
+    "provisional": true
+   }
+  },
+  "llama": {
+   "id": {
+    "v": "vm-2b9f04",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 49.6,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 139.2,
+    "provisional": true
+   },
+   "serving_s": {
+    "v": 377.9,
+    "provisional": true
+   },
+   "ip": {
+    "v": "10.0.3.21",
+    "provisional": true
+   }
+  },
+  "gemma": {
+   "id": {
+    "v": "vm-e3a1c8",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 53.4,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 146.1,
+    "provisional": true
+   },
+   "serving_s": {
+    "v": 402.6,
+    "provisional": true
+   },
+   "ip": {
+    "v": "10.0.3.9",
+    "provisional": true
+   }
+  },
+  "phi": {
+   "id": {
+    "v": "vm-90d5f7",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 52.0,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 141.8,
+    "provisional": true
+   },
+   "serving_s": {
+    "v": 391.4,
+    "provisional": true
+   },
+   "ip": {
+    "v": "10.0.3.30",
+    "provisional": true
+   }
+  },
+  "reward": {
+   "id": {
+    "v": "vm-4f6b2d",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 161.0,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 254.3,
+    "provisional": true
+   },
+   "serving_s": {
+    "v": 497.2,
+    "provisional": true
+   },
+   "ip": {
+    "v": "10.0.3.12",
+    "provisional": true
+   }
+  },
+  "standby": {
+   "id": {
+    "v": "vm-b81e3a",
+    "provisional": true
+   },
+   "booting_s": {
+    "v": 50.7,
+    "provisional": true
+   },
+   "pulling_s": {
+    "v": 142.5,
+    "provisional": true
+   },
+   "ready_s": {
+    "v": 612.8,
+    "provisional": true
+   }
+  }
+ },
+ "boot": {
+  "median_s": {
+   "v": 51.6,
+   "provisional": true
+  },
+  "slowest_s": {
+   "v": 161.0,
+   "provisional": true
+  },
+  "cold_serving_s": {
+   "v": 418.3,
+   "provisional": true
+  },
+  "warm_promote_s": {
+   "v": 46.0,
+   "provisional": true
+  }
+ },
+ "idle_cost": {
+  "vms_n": {
+   "v": 6,
+   "provisional": true
+  },
+  "hours": {
+   "v": 12,
+   "provisional": false
+  },
+  "overnight_credits": {
+   "v": 61.9,
+   "provisional": true
+  }
+ },
+ "requested_at": {
+  "v": "2026-11-12 09:02:09",
+  "provisional": true
+ }
+}

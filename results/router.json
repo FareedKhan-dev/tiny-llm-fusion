@@ -1,0 +1,49 @@
+{
+ "_about": "the router on the odd dev rows, in Difficulty-Aware Router",
+ "mix": {
+  "1": {
+   "v": 469,
+   "provisional": true
+  },
+  "3": {
+   "v": 243,
+   "provisional": true
+  },
+  "2": {
+   "v": 190,
+   "provisional": true
+  }
+ },
+ "probe_share_pct": {
+  "v": 52,
+  "provisional": true
+ },
+ "routed_acc": {
+  "v": 87.9,
+  "provisional": true
+ },
+ "full_acc": {
+  "v": 88.6,
+  "provisional": true
+ },
+ "routed_cost": {
+  "v": 0.0019,
+  "provisional": true
+ },
+ "full_cost": {
+  "v": 0.0045,
+  "provisional": true
+ },
+ "acc_kept_pct": {
+  "v": 99,
+  "provisional": true
+ },
+ "cost_share_pct": {
+  "v": 42,
+  "provisional": true
+ },
+ "cost_cut_pct": {
+  "v": 58,
+  "provisional": true
+ }
+}

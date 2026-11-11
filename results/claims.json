@@ -1,0 +1,230 @@
+{
+ "_about": "the eight hypotheses of Frontier Gap Diagnosis and their verdicts, drawn in fig-verdicts",
+ "rule": {
+  "v": "held when the sealed interval of switching the part off is entirely a loss, in part otherwise",
+  "provisional": false
+ },
+ "H1": {
+  "name": {
+   "v": "Arithmetic slips",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "program samples fix most arithmetic slips",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -0.88 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -1.41,
+    -0.34
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "held",
+   "provisional": true
+  }
+ },
+ "H2": {
+  "name": {
+   "v": "Wrong method",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "an aggregator keeps the better method",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -0.59 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -1.22,
+    0.05
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "in part",
+   "provisional": true
+  }
+ },
+ "H3": {
+  "name": {
+   "v": "Missing facts",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "retrieval lifts MMLU",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -1.21 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -1.74,
+    -0.67
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "held",
+   "provisional": true
+  }
+ },
+ "H4": {
+  "name": {
+   "v": "Misread questions",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "a weighted vote outvotes misreads",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -0.40 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -0.98,
+    0.19
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "in part",
+   "provisional": true
+  }
+ },
+ "H5": {
+  "name": {
+   "v": "Code edge cases",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "shown examples catch wrong code",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -1.82 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -2.67,
+    -0.97
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "held",
+   "provisional": true
+  }
+ },
+ "H6": {
+  "name": {
+   "v": "Format failures",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "one follow-up recovers a lost answer",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "89% of lost answers recovered on dev",
+   "provisional": true
+  },
+  "ci": {
+   "v": null,
+   "provisional": true
+  },
+  "verdict": {
+   "v": "held",
+   "provisional": true
+  }
+ },
+ "H7": {
+  "name": {
+   "v": "Cost",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "routing keeps the accuracy at a fraction of the cost",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "99% of the accuracy at 42% of the cost",
+   "provisional": true
+  },
+  "ci": {
+   "v": null,
+   "provisional": true
+  },
+  "verdict": {
+   "v": "held",
+   "provisional": true
+  }
+ },
+ "H8": {
+  "name": {
+   "v": "Self-improvement",
+   "provisional": false
+  },
+  "prediction": {
+   "v": "DPO lifts the weakest members",
+   "provisional": false
+  },
+  "evidence": {
+   "v": "switched off: -0.44 points",
+   "provisional": true
+  },
+  "ci": {
+   "v": [
+    -1.31,
+    0.43
+   ],
+   "provisional": true
+  },
+  "verdict": {
+   "v": "in part",
+   "provisional": true
+  }
+ },
+ "tally": {
+  "held": {
+   "v": 5,
+   "provisional": true
+  },
+  "in_part": {
+   "v": 3,
+   "provisional": true
+  }
+ },
+ "alpha": {
+  "v": 0.05,
+  "provisional": false
+ },
+ "title_rule": {
+  "_about": "the plan's title rule, read off the pooled checkable TOST in eval.json (assemble.py)",
+  "tost_checkable_p": {
+   "v": 0.0465,
+   "provisional": true
+  },
+  "tost_checkable_verdict": {
+   "v": "PASS",
+   "provisional": true
+  },
+  "rivals_allowed": {
+   "v": true,
+   "provisional": true
+  }
+ }
+}

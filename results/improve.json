@@ -1,0 +1,67 @@
+{
+ "_about": "the training pass and DPO, in Self-Improvement Loop",
+ "episodes": {
+  "rows": {
+   "v": 61744,
+   "provisional": true
+  },
+  "right": {
+   "v": 44187,
+   "provisional": true
+  },
+  "tasks": {
+   "v": 4412,
+   "provisional": true
+  }
+ },
+ "pairs": {
+  "llama": {
+   "v": 2311,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 2047,
+   "provisional": true
+  }
+ },
+ "train_minutes": {
+  "llama": {
+   "v": 41,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 37,
+   "provisional": true
+  }
+ },
+ "before": {
+  "llama": {
+   "v": 60.7,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 64.4,
+   "provisional": true
+  }
+ },
+ "after": {
+  "llama": {
+   "v": 65.8,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 68.7,
+   "provisional": true
+  }
+ },
+ "gain": {
+  "llama": {
+   "v": 5.1,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 4.3,
+   "provisional": true
+  }
+ }
+}

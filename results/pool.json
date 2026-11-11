@@ -1,0 +1,277 @@
+{
+ "_about": "the four proposers on dev, printed in Diverse Model Pool and drawn in fig-venn",
+ "dev_n": {
+  "v": 1805,
+  "provisional": false
+ },
+ "family_n": {
+  "math": {
+   "v": 800,
+   "provisional": false
+  },
+  "knowledge": {
+   "v": 400,
+   "provisional": false
+  },
+  "reasoning": {
+   "v": 405,
+   "provisional": false
+  },
+  "code": {
+   "v": 200,
+   "provisional": false
+  }
+ },
+ "correct": {
+  "qwen": {
+   "math": {
+    "v": 683,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 295,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 309,
+    "provisional": true
+   },
+   "code": {
+    "v": 141,
+    "provisional": true
+   }
+  },
+  "llama": {
+   "math": {
+    "v": 505,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 246,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 227,
+    "provisional": true
+   },
+   "code": {
+    "v": 117,
+    "provisional": true
+   }
+  },
+  "gemma": {
+   "math": {
+    "v": 557,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 239,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 244,
+    "provisional": true
+   },
+   "code": {
+    "v": 122,
+    "provisional": true
+   }
+  },
+  "phi": {
+   "math": {
+    "v": 615,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 269,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 274,
+    "provisional": true
+   },
+   "code": {
+    "v": 129,
+    "provisional": true
+   }
+  }
+ },
+ "acc": {
+  "qwen": {
+   "v": 79.1,
+   "provisional": true
+  },
+  "llama": {
+   "v": 60.7,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 64.4,
+   "provisional": true
+  },
+  "phi": {
+   "v": 71.3,
+   "provisional": true
+  }
+ },
+ "acc_family": {
+  "qwen": {
+   "math": {
+    "v": 85.4,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 73.8,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 76.3,
+    "provisional": true
+   },
+   "code": {
+    "v": 70.5,
+    "provisional": true
+   }
+  },
+  "llama": {
+   "math": {
+    "v": 63.1,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 61.5,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 56.0,
+    "provisional": true
+   },
+   "code": {
+    "v": 58.5,
+    "provisional": true
+   }
+  },
+  "gemma": {
+   "math": {
+    "v": 69.6,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 59.8,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 60.2,
+    "provisional": true
+   },
+   "code": {
+    "v": 61.0,
+    "provisional": true
+   }
+  },
+  "phi": {
+   "math": {
+    "v": 76.9,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 67.2,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 67.7,
+    "provisional": true
+   },
+   "code": {
+    "v": 64.5,
+    "provisional": true
+   }
+  }
+ },
+ "union_n": {
+  "v": 1652,
+  "provisional": true
+ },
+ "union_pct": {
+  "v": 91.5,
+  "provisional": true
+ },
+ "headroom_pts": {
+  "v": 12.4,
+  "provisional": true
+ },
+ "venn": {
+  "all_four": {
+   "v": 728,
+   "provisional": true
+  },
+  "exactly_three": {
+   "v": 429,
+   "provisional": true
+  },
+  "exactly_two": {
+   "v": 278,
+   "provisional": true
+  },
+  "exactly_one": {
+   "v": 217,
+   "provisional": true
+  },
+  "none": {
+   "v": 153,
+   "provisional": true
+  }
+ },
+ "only": {
+  "qwen": {
+   "v": 96,
+   "provisional": true
+  },
+  "phi": {
+   "v": 58,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 35,
+   "provisional": true
+  },
+  "llama": {
+   "v": 28,
+   "provisional": true
+  }
+ },
+ "rho": {
+  "qwen-llama": {
+   "v": 0.33,
+   "provisional": true
+  },
+  "qwen-gemma": {
+   "v": 0.31,
+   "provisional": true
+  },
+  "qwen-phi": {
+   "v": 0.42,
+   "provisional": true
+  },
+  "llama-gemma": {
+   "v": 0.39,
+   "provisional": true
+  },
+  "llama-phi": {
+   "v": 0.34,
+   "provisional": true
+  },
+  "gemma-phi": {
+   "v": 0.37,
+   "provisional": true
+  }
+ },
+ "rho_mean": {
+  "v": 0.36,
+  "provisional": true
+ },
+ "n_eff_4": {
+  "v": 1.92,
+  "provisional": true
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "_about": "the Opus yardstick on dev, printed in Frontier Gap Diagnosis",
+ "live": {
+  "msg_id": {
+   "v": "msg_01HqT7vR3kXw9GmZ2pL8sYfN",
+   "provisional": true
+  },
+  "input_tokens": {
+   "v": 64,
+   "provisional": true
+  },
+  "output_tokens": {
+   "v": 318,
+   "provisional": true
+  },
+  "seconds": {
+   "v": 4.1,
+   "provisional": true
+  },
+  "credits": {
+   "v": 0.006616,
+   "provisional": true
+  }
+ },
+ "pilot_per_family": {
+  "v": 200,
+  "provisional": false
+ },
+ "pilot_n": {
+  "v": 800,
+  "provisional": false
+ },
+ "pilot_refusals": {
+  "v": 0,
+  "provisional": true
+ },
+ "pilot": {
+  "qwen": {
+   "math": {
+    "v": 85.5,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 74.0,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 76.5,
+    "provisional": true
+   },
+   "code": {
+    "v": 70.5,
+    "provisional": true
+   }
+  },
+  "opus": {
+   "math": {
+    "v": 97.0,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 91.5,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 93.5,
+    "provisional": true
+   },
+   "code": {
+    "v": 82.0,
+    "provisional": true
+   }
+  },
+  "team": {
+   "math": {
+    "v": 95.0,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 86.5,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 94.0,
+    "provisional": true
+   },
+   "code": {
+    "v": 89.0,
+    "provisional": true
+   }
+  }
+ },
+ "pilot_correct": {
+  "qwen": {
+   "math": {
+    "v": 171,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 148,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 153,
+    "provisional": true
+   },
+   "code": {
+    "v": 141,
+    "provisional": true
+   }
+  },
+  "opus": {
+   "math": {
+    "v": 194,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 183,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 187,
+    "provisional": true
+   },
+   "code": {
+    "v": 164,
+    "provisional": true
+   }
+  },
+  "team": {
+   "math": {
+    "v": 190,
+    "provisional": true
+   },
+   "knowledge": {
+    "v": 173,
+    "provisional": true
+   },
+   "reasoning": {
+    "v": 188,
+    "provisional": true
+   },
+   "code": {
+    "v": 178,
+    "provisional": true
+   }
+  }
+ },
+ "knowledge_short_pts": {
+  "v": 5.0,
+  "provisional": true
+ },
+ "misses_read": {
+  "v": 200,
+  "provisional": true
+ },
+ "qwen_dev_misses": {
+  "v": 377,
+  "provisional": true
+ },
+ "miss": {
+  "arithmetic": {
+   "v": 31,
+   "provisional": true
+  },
+  "method": {
+   "v": 22,
+   "provisional": true
+  },
+  "knowledge": {
+   "v": 19,
+   "provisional": true
+  },
+  "misread": {
+   "v": 14,
+   "provisional": true
+  },
+  "code_edge": {
+   "v": 8,
+   "provisional": true
+  },
+  "format": {
+   "v": 6,
+   "provisional": true
+  }
+ },
+ "miss_n": {
+  "arithmetic": {
+   "v": 62,
+   "provisional": true
+  },
+  "method": {
+   "v": 44,
+   "provisional": true
+  },
+  "knowledge": {
+   "v": 38,
+   "provisional": true
+  },
+  "misread": {
+   "v": 28,
+   "provisional": true
+  },
+  "code_edge": {
+   "v": 16,
+   "provisional": true
+  },
+  "format": {
+   "v": 12,
+   "provisional": true
+  }
+ }
+}

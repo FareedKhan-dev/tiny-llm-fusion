@@ -1,0 +1,37 @@
+{
+ "_about": "one MATH dev question through the sampler, printed in Parallel Candidate Sampling",
+ "demo_id": {
+  "v": "math_full/intermediate_algebra/1187",
+  "provisional": true
+ },
+ "slowest_s": {
+  "qwen": {
+   "v": 11.8,
+   "provisional": true
+  },
+  "llama": {
+   "v": 14.2,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 9.6,
+   "provisional": true
+  },
+  "phi": {
+   "v": 12.3,
+   "provisional": true
+  }
+ },
+ "right_n": {
+  "v": 12,
+  "provisional": true
+ },
+ "total_n": {
+  "v": 18,
+  "provisional": false
+ },
+ "spellings_n": {
+  "v": 3,
+  "provisional": true
+ }
+}

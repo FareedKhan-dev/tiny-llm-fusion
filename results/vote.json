@@ -1,0 +1,119 @@
+{
+ "_about": "the weighted vote on dev, printed in Weighted Majority Voting",
+ "demo": {
+  "winner": {
+   "v": "\\frac{14}{3}",
+   "provisional": true
+  },
+  "margin": {
+   "v": 0.538,
+   "provisional": true
+  },
+  "shares": {
+   "\\frac{14}{3}": {
+    "v": 0.689,
+    "provisional": true
+   },
+   "5": {
+    "v": 0.151,
+    "provisional": true
+   },
+   "\\frac{7}{3}": {
+    "v": 0.13,
+    "provisional": true
+   },
+   "4": {
+    "v": 0.029,
+    "provisional": true
+   }
+  },
+  "groups_n": {
+   "v": 4,
+   "provisional": true
+  },
+  "answers_n": {
+   "v": 18,
+   "provisional": true
+  }
+ },
+ "qwen": {
+  "math": {
+   "v": 85.4,
+   "provisional": true
+  },
+  "knowledge": {
+   "v": 73.8,
+   "provisional": true
+  },
+  "reasoning": {
+   "v": 76.3,
+   "provisional": true
+  },
+  "code": {
+   "v": 70.5,
+   "provisional": true
+  }
+ },
+ "majority": {
+  "math": {
+   "v": 90.1,
+   "provisional": true
+  },
+  "knowledge": {
+   "v": 77.0,
+   "provisional": true
+  },
+  "reasoning": {
+   "v": 85.2,
+   "provisional": true
+  },
+  "code": {
+   "v": 72.0,
+   "provisional": true
+  }
+ },
+ "weighted": {
+  "math": {
+   "v": 91.4,
+   "provisional": true
+  },
+  "knowledge": {
+   "v": 78.5,
+   "provisional": true
+  },
+  "reasoning": {
+   "v": 86.4,
+   "provisional": true
+  },
+  "code": {
+   "v": 72.5,
+   "provisional": true
+  }
+ },
+ "weighted_over_majority_pts": {
+  "v": 1.2,
+  "provisional": true
+ },
+ "weights": {
+  "qwen": {
+   "v": 1.33,
+   "provisional": true
+  },
+  "llama": {
+   "v": 0.43,
+   "provisional": true
+  },
+  "gemma": {
+   "v": 0.59,
+   "provisional": true
+  },
+  "phi": {
+   "v": 0.91,
+   "provisional": true
+  },
+  "moa": {
+   "v": 1.95,
+   "provisional": true
+  }
+ }
+}

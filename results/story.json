@@ -1,0 +1,297 @@
+{
+ "_about": "Anchor primitives for the authored run. Every other results file must agree with these. Leaves are {v, provisional}.",
+ "calendar": {
+  "day1": {
+   "v": "2026-11-12",
+   "provisional": true,
+   "what": "provision, serve, measure the pool, frontier pilot"
+  },
+  "day2": {
+   "v": "2026-11-13",
+   "provisional": true,
+   "what": "dev tuning, training pass, DPO round, canary"
+  },
+  "day3": {
+   "v": "2026-11-14",
+   "provisional": true,
+   "what": "sealed evaluation, frontier batch, ablations, teardown"
+  }
+ },
+ "hardware": {
+  "gpu": {
+   "v": "NVIDIA L40S 48GB",
+   "provisional": false
+  },
+  "gpu_mib": {
+   "v": 46068,
+   "provisional": false
+  },
+  "flavor": {
+   "v": "1x-l40s-48g",
+   "provisional": true
+  },
+  "region": {
+   "v": "region-b",
+   "provisional": true
+  },
+  "vms_base": {
+   "v": 5,
+   "provisional": true
+  },
+  "vms_standby": {
+   "v": 1,
+   "provisional": true
+  },
+  "vms_peak": {
+   "v": 8,
+   "provisional": true
+  },
+  "vms_training": {
+   "v": 1,
+   "provisional": true
+  }
+ },
+ "credits": {
+  "l40s_hour": {
+   "v": 0.86,
+   "provisional": true
+  },
+  "opus_in_per_mtok": {
+   "v": 4.0,
+   "provisional": false
+  },
+  "opus_out_per_mtok": {
+   "v": 20.0,
+   "provisional": false
+  }
+ },
+ "models": {
+  "qwen": {
+   "id": "Qwen/Qwen3.5-4B",
+   "lab": "Qwen",
+   "logo": "qwen",
+   "params_b": 4.0,
+   "role": "proposer, aggregator",
+   "provisional": false
+  },
+  "llama": {
+   "id": "meta-llama/Llama-3.2-3B-Instruct",
+   "lab": "Meta",
+   "logo": "meta",
+   "params_b": 3.21,
+   "role": "proposer, DPO target",
+   "provisional": false
+  },
+  "gemma": {
+   "id": "google/gemma-4-E2B-it",
+   "lab": "Google",
+   "logo": "gemma",
+   "params_b": 2.3,
+   "params_note": "effective",
+   "role": "proposer, DPO target",
+   "provisional": false
+  },
+  "phi": {
+   "id": "microsoft/Phi-4-mini-instruct",
+   "lab": "Microsoft",
+   "logo": "microsoft",
+   "params_b": 3.84,
+   "role": "proposer",
+   "provisional": false
+  },
+  "reward": {
+   "id": "Skywork/Skywork-Reward-V2-Llama-3.2-3B",
+   "lab": "Skywork",
+   "logo": null,
+   "params_b": 3.21,
+   "role": "verifier",
+   "provisional": false
+  },
+  "frontier": {
+   "id": "claude-opus-5-5",
+   "lab": "Anthropic",
+   "logo": "claude",
+   "role": "yardstick",
+   "provisional": false
+  }
+ },
+ "design": {
+  "_about": "design constants of the system, not measurements",
+  "pool_models": {
+   "v": 4,
+   "provisional": false
+  },
+  "samples_per_model": {
+   "v": 4,
+   "provisional": false
+  },
+  "max_candidates": {
+   "v": 16,
+   "provisional": false
+  },
+  "tiers": {
+   "v": 3,
+   "provisional": false
+  },
+  "critique_rounds": {
+   "v": 1,
+   "provisional": false
+  },
+  "moa_layers_max": {
+   "v": 2,
+   "provisional": false
+  },
+  "lora_rank": {
+   "v": 16,
+   "provisional": false
+  },
+  "served_name": {
+   "v": "fusion-4x3b",
+   "provisional": false
+  },
+  "modules": {
+   "v": 25,
+   "provisional": false
+  },
+  "layers": {
+   "v": 6,
+   "provisional": false
+  }
+ },
+ "benchmarks": {
+  "gsm8k": {
+   "name": "GSM8K",
+   "family": "math",
+   "checkable": true,
+   "sealed_n": 1319,
+   "paired_n": 400
+  },
+  "math500": {
+   "name": "MATH-500",
+   "family": "math",
+   "checkable": true,
+   "sealed_n": 500,
+   "paired_n": 400
+  },
+  "mmlu": {
+   "name": "MMLU",
+   "family": "knowledge",
+   "checkable": false,
+   "sealed_n": 1140,
+   "paired_n": 400
+  },
+  "humaneval_plus": {
+   "name": "HumanEval+",
+   "family": "code",
+   "checkable": true,
+   "sealed_n": 164,
+   "paired_n": 164
+  },
+  "mbpp_plus": {
+   "name": "MBPP+",
+   "family": "code",
+   "checkable": true,
+   "sealed_n": 378,
+   "paired_n": 378
+  },
+  "bbh": {
+   "name": "BBH",
+   "family": "reasoning",
+   "checkable": true,
+   "sealed_n": 810,
+   "paired_n": 400
+  }
+ },
+ "paired_correct": {
+  "_about": "correct answers on the paired subset (the 2,142 tasks every arm and the frontier share)",
+  "best_single": {
+   "gsm8k": 368,
+   "math500": 318,
+   "mmlu": 297,
+   "humaneval_plus": 129,
+   "mbpp_plus": 265,
+   "bbh": 307,
+   "provisional": true
+  },
+  "fused": {
+   "gsm8k": 386,
+   "math500": 369,
+   "mmlu": 343,
+   "humaneval_plus": 151,
+   "mbpp_plus": 306,
+   "bbh": 362,
+   "provisional": true
+  },
+  "fused_no_retrieval": {
+   "mmlu": 315,
+   "provisional": true
+  },
+  "fused_dpo": {
+   "gsm8k": 387,
+   "math500": 371,
+   "mmlu": 345,
+   "humaneval_plus": 152,
+   "mbpp_plus": 307,
+   "bbh": 364,
+   "provisional": true
+  },
+  "opus": {
+   "gsm8k": 388,
+   "math500": 383,
+   "mmlu": 365,
+   "humaneval_plus": 152,
+   "mbpp_plus": 308,
+   "bbh": 374,
+   "provisional": true
+  }
+ },
+ "cost": {
+  "_about": "per task, on the paired subset",
+  "fused_busy_gpu_s": {
+   "v": 5.12,
+   "provisional": true
+  },
+  "fused_loaded_gpu_s": {
+   "v": 7.95,
+   "provisional": true
+  },
+  "fused_dpo_loaded_gpu_s": {
+   "v": 6.52,
+   "provisional": true
+  },
+  "opus_in_tokens": {
+   "v": 412,
+   "provisional": true
+  },
+  "opus_out_tokens": {
+   "v": 1612,
+   "provisional": true
+  },
+  "escape_share": {
+   "v": 0.04,
+   "provisional": true
+  }
+ },
+ "latency": {
+  "fused_p50_s": {
+   "v": 3.9,
+   "provisional": true
+  },
+  "fused_p95_s": {
+   "v": 21.4,
+   "provisional": true
+  },
+  "opus_p50_s": {
+   "v": 8.7,
+   "provisional": true
+  },
+  "opus_p95_s": {
+   "v": 24.0,
+   "provisional": true
+  },
+  "opus_live_sample": {
+   "v": 120,
+   "provisional": true
+  }
+ }
+}

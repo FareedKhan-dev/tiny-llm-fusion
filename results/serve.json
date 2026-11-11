@@ -1,0 +1,205 @@
+{
+ "_about": "vLLM memory per L40S, quoted in Serving Layer and drawn in fig-rack",
+ "gpu_mib": {
+  "v": 46068,
+  "provisional": false
+ },
+ "utilization": {
+  "v": 0.9,
+  "provisional": false
+ },
+ "vllm": {
+  "v": "0.21.1",
+  "provisional": true
+ },
+ "vms": {
+  "qwen": {
+   "weights_gib": {
+    "v": 8.4127,
+    "provisional": true
+   },
+   "kv_gib": {
+    "v": 29.62,
+    "provisional": true
+   },
+   "kv_bytes_per_token": {
+    "v": 73728,
+    "provisional": true
+   },
+   "kv_tokens": {
+    "v": 431360,
+    "provisional": true
+   },
+   "max_len": {
+    "v": 16384,
+    "provisional": false
+   },
+   "concurrency": {
+    "v": 26.33,
+    "provisional": true
+   },
+   "other_gib": {
+    "v": 2.46,
+    "provisional": true
+   }
+  },
+  "llama": {
+   "weights_gib": {
+    "v": 6.0234,
+    "provisional": true
+   },
+   "kv_gib": {
+    "v": 32.87,
+    "provisional": true
+   },
+   "kv_bytes_per_token": {
+    "v": 57344,
+    "provisional": true
+   },
+   "kv_tokens": {
+    "v": 615472,
+    "provisional": true
+   },
+   "max_len": {
+    "v": 8192,
+    "provisional": false
+   },
+   "concurrency": {
+    "v": 75.13,
+    "provisional": true
+   },
+   "other_gib": {
+    "v": 1.6,
+    "provisional": true
+   },
+   "smi_used_mib": {
+    "v": 41452,
+    "provisional": true
+   },
+   "layers": {
+    "v": 28,
+    "provisional": false
+   },
+   "kv_heads": {
+    "v": 8,
+    "provisional": false
+   },
+   "head_dim": {
+    "v": 128,
+    "provisional": false
+   }
+  },
+  "gemma": {
+   "weights_gib": {
+    "v": 9.6315,
+    "provisional": true
+   },
+   "kv_gib": {
+    "v": 28.71,
+    "provisional": true
+   },
+   "kv_bytes_per_token": {
+    "v": 20480,
+    "provisional": true
+   },
+   "kv_tokens": {
+    "v": 1505216,
+    "provisional": true
+   },
+   "max_len": {
+    "v": 8192,
+    "provisional": false
+   },
+   "concurrency": {
+    "v": 183.74,
+    "provisional": true
+   },
+   "other_gib": {
+    "v": 2.15,
+    "provisional": true
+   }
+  },
+  "phi": {
+   "weights_gib": {
+    "v": 7.153,
+    "provisional": true
+   },
+   "kv_gib": {
+    "v": 31.68,
+    "provisional": true
+   },
+   "kv_bytes_per_token": {
+    "v": 65536,
+    "provisional": true
+   },
+   "kv_tokens": {
+    "v": 519040,
+    "provisional": true
+   },
+   "max_len": {
+    "v": 8192,
+    "provisional": false
+   },
+   "concurrency": {
+    "v": 63.36,
+    "provisional": true
+   },
+   "other_gib": {
+    "v": 1.66,
+    "provisional": true
+   }
+  },
+  "reward": {
+   "weights_gib": {
+    "v": 5.9823,
+    "provisional": true
+   },
+   "kv_gib": {
+    "v": 33.04,
+    "provisional": true
+   },
+   "kv_bytes_per_token": {
+    "v": 57344,
+    "provisional": true
+   },
+   "kv_tokens": {
+    "v": 618656,
+    "provisional": true
+   },
+   "max_len": {
+    "v": 8192,
+    "provisional": false
+   },
+   "concurrency": {
+    "v": 75.52,
+    "provisional": true
+   },
+   "other_gib": {
+    "v": 1.47,
+    "provisional": true
+   }
+  }
+ },
+ "smi": {
+  "driver": {
+   "v": "580.95.05",
+   "provisional": true
+  },
+  "cuda": {
+   "v": "13.0",
+   "provisional": true
+  },
+  "temp_c": {
+   "v": 41,
+   "provisional": true
+  },
+  "power_w": {
+   "v": 87,
+   "provisional": true
+  },
+  "cap_w": {
+   "v": 350,
+   "provisional": false
+  }
+ }
+}
